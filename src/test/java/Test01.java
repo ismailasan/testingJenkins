@@ -40,13 +40,13 @@ public class Test01 {
         Map<String, Object> bookingDates = (Map)actualData.get("bookingdates");
         System.out.println(bookingDates);
 
-        Assert.assertEquals("Mary", actualData.get("firstname"));
-        Assert.assertEquals("Jones", actualData.get("lastname"));
-        Assert.assertEquals(882, actualData.get("totalprice"));
+        Assert.assertEquals("Sally", actualData.get("firstname"));
+        Assert.assertEquals("Smith", actualData.get("lastname"));
+        Assert.assertEquals(447, actualData.get("totalprice"));
         Assert.assertEquals(true, actualData.get("depositpaid"));
 
-        Assert.assertEquals("2016-11-08", bookingDates.get("checkin"));
-        Assert.assertEquals("2019-05-02", bookingDates.get("checkout"));
+        Assert.assertEquals("2019-02-19", bookingDates.get("checkin"));
+        Assert.assertEquals("2022-03-06", bookingDates.get("checkout"));
 
     }
 
